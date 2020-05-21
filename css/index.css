@@ -92,3 +92,6 @@ video {
 .btn {
   border: 2px solid black;
 }
+body {
+  background-color: red;
+}
