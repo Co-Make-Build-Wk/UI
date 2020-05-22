@@ -90,21 +90,49 @@ body {
   font-family: 'Oxygen', sans-serif;
 }
 .nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.nav a {
+  text-decoration: none;
   border: 2px solid black;
+}
+@media (min-width:500px) {
+  .nav a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
 }
 .btn {
   border: 2px solid black;
 }
 .top-content {
   border: 2px solid lightskyblue;
-  display: flex;
   justify-content: space-between;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+@media (min-width:500px) {
+  .top-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    border: 2px solid green;
+  }
 }
 .pic1,
 .pic2,
 .pic3 {
   border: 2px solid orange;
-  width: 300px;
+  padding: 5%;
+  width: 30%;
   object-fit: fill;
   display: flex;
   justify-content: center;
@@ -114,5 +142,50 @@ body {
 .pic3 img {
   border-radius: 8px;
   height: 200px;
+  object-fit: fill;
+}
+@media (min-width:500px) {
+  .pic1 img,
+  .pic2 img,
+  .pic3 img {
+    width: 80%;
+  }
+}
+.pic4 {
+  border: 2px solid orange;
+  width: 70%;
+  padding: 5% 15%;
+  object-fit: fill;
+  display: flex;
+  justify-content: space-evenly;
+}
+.pic4 img {
+  border-radius: 8px;
+}
+.teamPage {
+  background-color: #586F7C;
+}
+.team {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin: 10%;
+}
+.kevin,
+.josh,
+.fran,
+.aric {
+  object-fit: fill;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 5%;
+}
+.kevin img,
+.josh img,
+.fran img,
+.aric img {
+  width: 70%;
+  border-radius: 8px;
   object-fit: fill;
 }

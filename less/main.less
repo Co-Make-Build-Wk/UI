@@ -2,7 +2,16 @@ body {
     font-family: @mainFont;
 }
 .nav {
+    .display(center, center, column);
+    
+    a{
+    text-decoration: none;
+    @media @mobile {
+        .display(center, center, row);
+        }
     border: 2px solid black;
+
+}
 }
 
 .btn {
@@ -13,17 +22,23 @@ body {
 .top-content {
     border: 2px solid lightskyblue; 
     // margin: 0 auto;
-    // padding: 50%;
+    // padding: 5%;
     display: flex;
     justify-content: space-between;
+    .display(center, center, column);
+    @media @mobile {
+        .display(center, center, row);
+        border: 2px solid green;
+
+        }
 
 }
 
 .pic1, .pic2, .pic3 {
     border: 2px solid orange;
     // margin: 0 auto;
-    // padding: 50%;
-    width:300px;
+    padding: 5%;
+    width:30%;
     // border-radius: 8px;
     // height:200px;
     // max-width: 10%;
@@ -33,6 +48,7 @@ body {
     justify-content: center;
 
     img {
+    @media @mobile {width: 80%;}
     // margin: 0 auto;
     // padding: 50%;
     // width:300px;
@@ -92,6 +108,32 @@ body {
 
 // }
 
+.pic4 {
+    border: 2px solid orange;
+    // margin: 0 auto;
+    // padding: 50%;
+    width:70%;
+    // border-radius: 8px;
+    // height:200px;
+    // max-width: 10%;
+    // height:50px;
+    padding: 5% 15%;
+    object-fit: fill;
+    display: flex;
+    justify-content: space-evenly;
+
+    img {
+    // margin: 0 auto;
+    // padding: 50%;
+    // width:300px;
+    border-radius: 8px;
+    // height:200px;
+    // object-fit: fill;
+    // display: flex;
+    // justify-content: center;
+    } 
+}
+
 // .footer {
 
 // }
@@ -104,9 +146,19 @@ body {
 
 // }
 
-// .team {
+.teamPage {
+    background-color: #586F7C;
+}
 
-// }
+.team {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 10%;
+    // width: 80%;
+
+    // background-color: #586F7C;
+}
 
 // .josh {
 
@@ -116,9 +168,27 @@ body {
 
 // }
 
-// .kevin {
-
-// }
+.kevin, .josh, .fran, .aric {
+    // width: 300px;
+    // border-radius: 8px;
+    // height:200px;
+    // max-width: 10%;
+    // height:50px;
+    object-fit: fill;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 5%;
+    // width: 40%;
+    img {
+        // margin: 0 auto;
+        // padding: 50%;
+        width:70%;
+        border-radius: 8px;
+        // height:200px;
+        object-fit: fill;
+        }
+}
 
 // .aric {
 
