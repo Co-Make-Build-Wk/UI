@@ -214,11 +214,18 @@ body {
 .pic4 img {
   border-radius: 8px;
 }
+.footer a {
+  text-decoration: none;
+  color: #FEA82F;
+  font-size: 18px;
+  padding: 5%;
+}
 .next a {
   text-decoration: none;
   color: #2A2D34;
   font-size: 2rem;
   padding-left: 5%;
+  padding-top: 5%;
 }
 .teamPage {
   background-color: #586F7C;
