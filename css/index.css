@@ -127,7 +127,6 @@ body {
   color: #FEA82F;
   font-size: 18px;
   padding: 2%;
-  border: 2px solid black;
 }
 @media (min-width:500px) {
   .nav a {
@@ -138,7 +137,6 @@ body {
   }
 }
 .btn {
-  border: 2px solid black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -146,7 +144,6 @@ body {
   box-shadow: 0 8px 16px 0 #2A2D34;
 }
 .top-content {
-  border: 2px solid lightskyblue;
   justify-content: space-between;
   display: flex;
   justify-content: center;
@@ -159,13 +156,11 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    border: 2px solid green;
   }
 }
 .pic1,
 .pic2,
 .pic3 {
-  border: 2px solid orange;
   padding: 5%;
   width: 25%;
   object-fit: fill;
@@ -204,7 +199,6 @@ body {
   padding: 5%;
 }
 .pic4 {
-  border: 2px solid orange;
   width: 70%;
   padding: 5% 15%;
   object-fit: fill;
@@ -220,12 +214,21 @@ body {
   font-size: 18px;
   padding: 5%;
 }
+@media (min-width:500px) {
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+}
 .next a {
   text-decoration: none;
   color: #2A2D34;
   font-size: 2rem;
-  padding-left: 5%;
-  padding-top: 5%;
+  padding-right: 5%;
+  display: flex;
+  justify-content: flex-end;
 }
 .teamPage {
   background-color: #586F7C;
