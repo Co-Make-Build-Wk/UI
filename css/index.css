@@ -90,29 +90,32 @@ video {
   font-size: 1rem;
   font-weight: 700;
   color: black;
-  background-color: white;
+  background-color: #FEA82F;
   padding: 0.5em 2.5em;
-  border-radius: 4px;
-  width: 10%;
+  border-radius: 18px;
+  width: 6%;
   margin: 0 auto;
 }
 body {
   font-family: 'Oxygen', sans-serif;
 }
-.mainPage .nav {
+.mainPage {
+  background-color: #586F7C;
+}
+.nav {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-.mainPage .nav a {
+.nav a {
   text-decoration: none;
-  color: #2A2D34;
+  color: #FEA82F;
   font-size: 18px;
   border: 2px solid black;
 }
 @media (min-width:500px) {
-  .mainPage .nav a {
+  .nav a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -167,6 +170,24 @@ body {
     width: 80%;
   }
 }
+.middle-content {
+  width: 70%;
+}
+.top {
+  padding: 5%;
+}
+.mid {
+  padding: 5%;
+}
+.lower {
+  padding: 5%;
+}
+.see {
+  padding: 3%;
+}
+.list {
+  padding: 5%;
+}
 .pic4 {
   border: 2px solid orange;
   width: 70%;
@@ -200,7 +221,8 @@ body {
 .kevin,
 .josh,
 .fran,
-.aric {
+.aric,
+.angelique {
   object-fit: fill;
   display: flex;
   justify-content: center;
@@ -210,10 +232,18 @@ body {
 .kevin img,
 .josh img,
 .fran img,
-.aric img {
+.aric img,
+.angelique img {
   width: 70%;
   border-radius: 8px;
   object-fit: fill;
+}
+.kevin img p,
+.josh img p,
+.fran img p,
+.aric img p,
+.angelique img p {
+  margin: 5%;
 }
 .back a {
   text-decoration: none;
