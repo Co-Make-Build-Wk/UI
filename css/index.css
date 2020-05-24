@@ -181,7 +181,10 @@ body {
   }
 }
 .middle-content {
-  width: 70%;
+  border: 2px solid tomato;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2%;
 }
 .top {
   padding: 5%;
@@ -194,6 +197,7 @@ body {
 }
 .see {
   padding: 3%;
+  text-align: center;
 }
 .list {
   padding: 5%;
