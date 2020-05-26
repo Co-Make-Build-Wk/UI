@@ -68,7 +68,7 @@ body {
     // border: 2px solid orange;
     // margin: 0 auto;
     padding: 5%;
-    width:25%;
+    width:55%;
     // border-radius: 8px;
     // height:200px;
     // max-width: 10%;
@@ -115,11 +115,25 @@ body {
 .middle-content {
     // text-align: left;
     // border: 2px solid tomato;
-    display: flex;
-    justify-content: space-evenly;
+    // display: flex;
+    // justify-content: space-evenly;
     padding: 2%;
-
+    // @media @mobile {
+        // .display(center, center, column);
     // width: 70%;
+// }
+
+    display: flex;
+    justify-content: space-between;
+    .display(center, center, column);
+    @media @mobile {
+    .display(center, center, row);
+    // border: 2px solid green;
+
+    }
+
+
+
 }
 
 .top {
@@ -138,7 +152,7 @@ body {
 //     padding: 5%;
  }
 .see {
-    padding: 10%;
+    padding: 2% 10%;
     // text-align: ;
 
 }
