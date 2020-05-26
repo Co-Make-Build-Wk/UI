@@ -86,7 +86,7 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
-.btn {
+.nav .btn {
   font-size: 1rem;
   font-weight: 700;
   color: black;
@@ -96,16 +96,10 @@ video {
   margin: 0 auto;
 }
 @media (min-width:500px) {
-  .btn {
+  .nav .btn {
     padding: 0.2em 1.5em;
     margin-right: 4%;
   }
-}
-body {
-  font-family: 'Oxygen', sans-serif;
-}
-.mainPage {
-  background-color: #586F7C;
 }
 .nav {
   display: flex;
@@ -142,6 +136,12 @@ body {
   align-items: center;
   height: 30px;
   box-shadow: 0 8px 16px 0 #2A2D34;
+}
+body {
+  font-family: 'Oxygen', sans-serif;
+}
+.mainPage {
+  background-color: #586F7C;
 }
 .top-content {
   justify-content: space-between;
@@ -181,7 +181,6 @@ body {
   }
 }
 .middle-content {
-  border: 2px solid tomato;
   display: flex;
   justify-content: space-evenly;
   padding: 2%;
