@@ -196,11 +196,12 @@ body {
   padding: 5%;
 }
 .see {
-  padding: 3%;
-  text-align: center;
+  padding: 10%;
 }
 .list {
   padding: 5%;
+  display: flex;
+  justify-content: space-evenly;
 }
 .pic4 {
   width: 70%;
