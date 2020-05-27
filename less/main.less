@@ -53,8 +53,7 @@ body {
     // border: 2px solid lightskyblue; 
     // margin: 0 auto;
     // padding: 5%;
-    display: flex;
-    justify-content: space-between;
+    .between();
     .display(center, center, column);
     @media @mobile {
         .display(center, center, row);
@@ -67,15 +66,13 @@ body {
 .pic1, .pic2, .pic3 {
     // border: 2px solid orange;
     // margin: 0 auto;
-    padding: 5%;
+    padding: @p;
     width:55%;
     // border-radius: 8px;
     // height:200px;
     // max-width: 10%;
     // height:50px;
-    object-fit: fill;
-    display: flex;
-    justify-content: center;
+    .center();
 
     img {
     @media @mobile {width: 80%;}
@@ -123,8 +120,7 @@ body {
     // width: 70%;
 // }
 
-    display: flex;
-    justify-content: space-between;
+    .between();
     .display(center, center, column);
     @media @mobile {
     .display(center, center, row);
@@ -137,15 +133,15 @@ body {
 }
 
 .top {
-    padding: 5%;
+    padding: @p;
 }
 
 .mid {
-    padding: 5%;
+    padding: @p;
 }
 
 .lower {
-    padding: 5%;
+    padding: @p;
 }
 
 .bottom-content {
@@ -158,9 +154,8 @@ body {
 }
 
 .list{
-    padding: 5%;
-    display: flex;
-    justify-content: space-evenly;
+    padding: @p;
+    .evenly();
 }
 
 // .list1 {
@@ -187,10 +182,9 @@ body {
     // height:200px;
     // max-width: 10%;
     // height:50px;
-    padding: 5% 15%;
+    padding: @p 15%;
     object-fit: fill;
-    display: flex;
-    justify-content: space-evenly;
+    .evenly();
 
     img {
     // margin: 0 auto;
@@ -210,7 +204,7 @@ body {
     text-decoration: none;
     color: #FEA82F;
     font-size: 18px;
-    padding: 5%;
+    padding: @p;
     // display: flex;
     // justify-content: right;
     // flex-direction: column;
@@ -225,7 +219,7 @@ body {
     text-decoration: none;
     color: #2A2D34;
     font-size: 2rem;
-    padding-right: 5%;
+    padding-right: @p;
     // padding-top: 5%;
     display: flex;
     justify-content: flex-end;
@@ -249,8 +243,7 @@ body {
 }
 
 .team {
-    display: flex;
-    justify-content: space-between;
+    .between();
     flex-direction: column;
     margin: 10%;
     // width: 80%;
@@ -272,9 +265,7 @@ body {
     // height:200px;
     // max-width: 10%;
     // height:50px;
-    object-fit: fill;
-    display: flex;
-    justify-content: center;
+    .center();
     flex-direction: column;
     margin: 5%;
     // width: 40%;
