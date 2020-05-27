@@ -196,12 +196,8 @@ body {
     flex-direction: row;
   }
 }
-.top {
-  padding: 5%;
-}
-.mid {
-  padding: 5%;
-}
+.top,
+.mid,
 .lower {
   padding: 5%;
 }
